@@ -54,9 +54,7 @@ public class CommissionEmployee extends Employee{
         if (!super.equals(o)) return false;
 
         CommissionEmployee that = (CommissionEmployee) o;
-
-        if (Float.compare(that.grossSales, grossSales) != 0) return false;
-        return commission == that.commission;
+        return Float.compare(that.grossSales, grossSales) == 0 && commission == that.commission;
     }
 
     /**

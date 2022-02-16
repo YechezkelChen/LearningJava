@@ -54,9 +54,7 @@ public class HourlyEmployee extends Employee {
         if (!super.equals(o)) return false;
 
         HourlyEmployee that = (HourlyEmployee) o;
-
-        if (hours != that.hours) return false;
-        return Float.compare(that.wage, wage) == 0;
+        return hours == that.hours && Float.compare(that.wage, wage) == 0;
     }
 
     /**

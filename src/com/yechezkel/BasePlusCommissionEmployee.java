@@ -39,7 +39,6 @@ public class BasePlusCommissionEmployee extends CommissionEmployee  {
         if (!super.equals(o)) return false;
 
         BasePlusCommissionEmployee that = (BasePlusCommissionEmployee) o;
-
         return Float.compare(that.baseSalary, baseSalary) == 0;
     }
 
